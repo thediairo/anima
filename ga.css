@@ -1,0 +1,86 @@
+body{
+    background-image:url(fo.avif);  
+    overflow: hidden; 
+ }
+ .line{
+     
+     width: 800px;
+     height: 800px;
+     position: absolute;
+     left: 50%;
+     top: 50%;
+     margin: -400px 0 0 -400px;
+     border: 2px solid black;
+     border-radius: 800px;     
+ }
+ .atra{
+     width:700px;
+     height: 400px;
+     position: relative;
+     top: 300px;
+     left: 700px;
+     margin: -135px 0 0 -135px;
+     background-image: url(aguj.gif);
+ 
+ } 
+ .atra2{
+     width: 175px;
+     height: 175px;
+     background-color: rgb(196, 186, 186);
+     border-radius: 175px;
+     background-position: 0 0;
+     position: absolute;
+     left: 0;
+     top: 40%;
+     box-shadow: 0px -5px 30px blue;
+     z-index:1;
+     margin-top: -85px;
+     animation: rotacion 20s infinite linear,
+             movi 20s infinite ease-in-out,
+                 movi2 20s infinite  linear;
+                 
+ }
+ @keyframes rotacion {
+          to {
+         background-position: -350px 0;    
+ }
+ }
+         
+ 
+ @keyframes movi{
+     50%{
+         left: 90%;
+         top: 60%;
+         box-shadow: 0px -5px 30px blue;
+ }
+ }
+ @keyframes movi2{
+     0%{
+         transform: scale(1) rotate(8deg);
+ }
+     25%{
+     transform: scale(1.5) rotate(8deg);
+ }
+     49.9%{
+         z-index: 1;
+ }
+ 
+     50%{
+         
+         z-index: -1;
+         transform: scale(1) rotate(8deg);
+ }
+     75%{
+        transform: scale(0.5) rotate(8deg)
+ }
+ 
+     100%{
+         z-index:-1;
+         transform: scale(1) rotate(8deg);
+         
+     
+ }
+ }
+ p{
+    color: white;
+ }
